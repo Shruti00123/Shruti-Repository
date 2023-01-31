@@ -49,6 +49,62 @@
 
             </tbody>
         </table>
+<!--adding section for contacts-->
+        <section>
+            <h3>we would love to hear from you</h3>
+            <!--adding a form-->
+            <form action="thanks.html" method="get">
+
+                <div>
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname"placeholder="John Doe">
+
+                <label for="youremail">Email</label>
+                <input type="email" id="youremail" name="yourself" placeholder="Algonquin email" value="@algonquinlive.com" required>
+                </div>
+
+                <div>
+                    <label for="Message">Message</label>
+                    <textarea name="Message"id="Message"></textarea>
+                </div>
+
+                <div>
+                    <label for="tickets">How many tickets? (sold in paris)</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10"step="2"value="2">
+                </div>
+
+                <div>
+                    <label for="row">Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Front</option>
+                        <option value="center">Center</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h3>Have you been here before</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes"name="past">
+                    
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="past">
+                </div>
+
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies" >
+                    <label for="policies"> I agree to th terms and conditions.</label>
+                </div>
+
+                <button type="submit">submit</button>
+            
+
+
+            </form>
+            
+
+        </section>
         
     </main>
     <!-- Site footer-->
