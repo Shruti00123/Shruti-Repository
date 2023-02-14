@@ -5,6 +5,8 @@ for adding a comment
 body {
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(43, 2, 2);
+    /*adding background image*/
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1{
@@ -27,17 +29,36 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 rem = 1.5 * 16 px = 24 px */
 }
 
 /* selectig element with ID value*/
 #treatofweek {
-    background-color: cadetblue;
+    /* color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg)
+    no-repeat center;
+
+    /* background size*/
+    background-size: cover;
+
+    font-size: 1.25rem;
+    /* 1.25 * 16 px = 20px */
+    padding: 1em;
+    /* 1 * 20 px= 20px*/ 
+
+    border: 1.5em solid black;
+
+    /* viewport based unit */
+    /* width: 100vw; */
+    /* scroll wheel bc it has space coming from the parent, it goes out of the screen which is not ideal */
+    
 }
 
 .blue-link {
     background-color: darkslategray;
     color: antiquewhite;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .large-text {
