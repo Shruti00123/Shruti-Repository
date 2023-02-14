@@ -116,7 +116,7 @@ nav ul a:link,
 nav ul a:visited {
     background-color: antiquewhite;
     /* horizontal vertical blur, spread, color*/
-    box-shadow: 2px 2x 4px 20x black;
+    box-shadow: 2px 2px 4px 20px black;
 
 }
 nav ul .current,
@@ -162,7 +162,7 @@ tbody tr:nth-child(even) {
 
 table th:nth-child(n),
 table td:nth-child(n) {
-border: 1pz solid green;
+border: 1px solid green;
 }
 
 /*using formula in nth-child selector*/
