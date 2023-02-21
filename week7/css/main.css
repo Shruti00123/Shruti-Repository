@@ -3,10 +3,32 @@ This is a CSS comment
 for adding a comment
 */
 body {
+    padding: 92px;
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(43, 2, 2);
     /*adding background image*/
     background-image: url(../images/white_brick_wall.png);
+}
+
+/* box model example*/
+section p {
+    width: 50%;
+    /* single value-top/bottom/ left/right*/
+    /* 2values = first value-top bottom, 2nd value -left/right*/
+    padding: 1em 0.5em;
+    margin: 1em 2em 2em 2em;
+    border-bottom: 2pxsolid black;
+}
+
+.container{
+    /* always contains a container cotaining everything inside the body tag*/
+    max-width: 1200px;
+    /* top/bottom and left/right */
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
 }
 
 h1{
@@ -25,6 +47,15 @@ nav ul {
     list-style: none;
 
 }
+
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
 /*selecting child elements with multiple levels*/
 nav ul a {
     color: darkslategray;
@@ -52,10 +83,23 @@ nav ul a {
     /* viewport based unit */
     /* width: 100vw; */
     /* scroll wheel bc it has space coming from the parent, it goes out of the screen which is not ideal */
+    position: relative;
     
 }
 
+.blue-link.large-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
 .blue-link {
+    /*em = 1.5 times the font size i.e 1.5 multiply font size */
+    padding: 1.5em;
+    width: 300px;
+    display: block;
+
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none; 
@@ -63,6 +107,24 @@ nav ul a {
 
 .large-text {
     font-size: 20px;
+}
+
+article,
+aside{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside{
+    width: 20%;
+}
+
+section{
+    clear: both;
 }
 
 .white-text {
@@ -103,12 +165,22 @@ h3~p {
     border: 4px solid darkslategray
 }
 
-/*$ sign will the border to all images
+/*$ sign will the border to all images*/
 
 [src$=".jpg"] {
     border:4px solid rgb(14, 2, 43)
 }
-*/
+
+/*fixed navigation*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
 
 /*psuedoclasses */
 nav ul a,
@@ -116,7 +188,7 @@ nav ul a:link,
 nav ul a:visited {
     background-color: antiquewhite;
     /* horizontal vertical blur, spread, color*/
-    box-shadow: 2px 2px 4px 20px black;
+    box-shadow: 2px 2px 4px 2px black;
 
 }
 nav ul .current,

@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <!--This is an HTML document-->
-    <!-- site header -->
+    <div class="container">
+        <!--This is an HTML document-->
+        <!-- site header -->
 
-    <!--
+        <!--
             shift will indent - shift + tab will indent backwards.
             cmd/ctrl + left/right arrows move to start and end of the line
             cmd/ctrl + up/down arrows move to start or end of page.
@@ -20,131 +21,134 @@
         -->
 
 
-    <header>
-        <!-- h1 is the most important heading. we can use 6 levels headings from h1 to h6-->
-        <h1>Reggie's Coffee Shop</h1>
+        <header>
+            <!-- h1 is the most important heading. we can use 6 levels headings from h1 to h6-->
+            <h1>Reggie's Coffee Shop</h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
 
-    </header>
-    <!-- starting main content of the page -->
-    <main>
-        <!-- adding an on page link-->
-        <a href="#treatofweek" class="blue-link">Treat of the week</a>
-        <!-- article of the page. this can be used as a stand-alone-->
-        <article>
-            <h2>our story</h2>
-            <!-- adding an image-->
-            <img src="./images/coffee-shop.jpg" title="coffee cup on a pile of coffee beans."
-                alt="coffee cup on a pile of coffee beans.">
-            <p>
-                We are a <em> family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr>
-                and head barista of the shop. Maria is the pastry chef.
-
-            </p>
-            <blockquote class="large-text">
-                We love all things coffee! <cite>- Reggie and Maria</cite>
-            </blockquote>
-            <hr>
-            <section>
-                <h3>ottawa</h3>
+        </header>
+        <!-- starting main content of the page -->
+        <main>
+            <!-- adding an on page link-->
+            <a href="#treatofweek" class="blue-link">Treat of the week</a>
+            <!-- article of the page. this can be used as a stand-alone-->
+            <article>
+                <h2>our story</h2>
+                <!-- adding an image-->
+                <img src="./images/coffee-shop.jpg" title="coffee cup on a pile of coffee beans."
+                    alt="coffee cup on a pile of coffee beans.">
                 <p>
-                    We are a local coffee shop based in Ottawa. Our speciality is <b> organic free-trade</b> coffee.
+                    We are a <em> family owned business</em>. Reggie is the <abbr
+                        title="Chief Executive Officer">CEO</abbr>
+                    and head barista of the shop. Maria is the pastry chef.
+
                 </p>
+                <blockquote class="large-text">
+                    We love all things coffee! <cite>- Reggie and Maria</cite>
+                </blockquote>
+                <hr>
+                <section>
+                    <h3>ottawa</h3>
+                    <p>
+                        We are a local coffee shop based in Ottawa. Our speciality is <b> organic free-trade</b> coffee.
+                    </p>
+                </section>
+
+            </article>
+            <aside>
+                <h3>Merchandise</h3>
+                <!-- Adding an unorderderd list-->
+                <ul>
+                    <li>T-shirt</li>
+                    <li>Hats</li>
+                    <li>Hoodies</li>
+
+                </ul>
+            </aside>
+            <!-- adding section for ordered list-->
+            <section>
+                <h3>Events</h3>
+                <!-- shortcut for creating many elements is element x amount (ex.li*5)-->
+                <ol>
+                    <li>June 23<sup>rd</sup> - Coffee for hope foundation</li>
+                    <li>July 17<sup>th</sup> - Live Music</li>
+                </ol>
+            </section>
+            <!-- Adding section for description list.-->
+            <section id="treatofweek" class="white-text">
+                <h3>Treat of the week</h3>
+                <d1>
+                    <dt>Name</dt>
+                    <dd>Banana bread</dd>
+                    <dt>Calories</dt>
+                    <dd>250 cal</dd>
+                    <dt>ingredients</dt>
+                    <dd>
+                        <ul>
+                            <li>All purpose flour</li>
+                            <li>baking soda</li>
+                            <li>baking powder</li>
+                            <li>salt</li>
+                            <li>butter</li>
+                            <li>sugar</li>
+                            <li>eggs</li>
+                            <li>lemon juice</li>
+                            <li>banana</li>
+                        </ul>
+                    </dd>
+                </d1>
+                <!-- adding an external link-->
+                <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank"
+                    class="blue-link">get
+                    the recepie</a>
             </section>
 
-        </article>
-        <aside>
-            <h3>Merchandise</h3>
-            <!-- Adding an unorderderd list-->
-            <ul>
-                <li>T-shirt</li>
-                <li>Hats</li>
-                <li>Hoodies</li>
+            <!--adding section for menu table-->
 
-            </ul>
-        </aside>
-        <!-- adding section for ordered list-->
-        <section>
-            <h3>Events</h3>
-            <!-- shortcut for creating many elements is element x amount (ex.li*5)-->
-            <ol>
-                <li>June 23<sup>rd</sup> - Coffee for hope foundation</li>
-                <li>July 17<sup>th</sup> - Live Music</li>
-            </ol>
-        </section>
-        <!-- Adding section for description list.-->
-        <section id="treatofweek" class="white-text">
-            <h3>Treat of the week</h3>
-            <d1>
-                <dt>Name</dt>
-                <dd>Banana bread</dd>
-                <dt>Calories</dt>
-                <dd>250 cal</dd>
-                <dt>ingredients</dt>
-                <dd>
-                    <ul>
-                        <li>All purpose flour</li>
-                        <li>baking soda</li>
-                        <li>baking powder</li>
-                        <li>salt</li>
-                        <li>butter</li>
-                        <li>sugar</li>
-                        <li>eggs</li>
-                        <li>lemon juice</li>
-                        <li>banana</li>
-                    </ul>
-                </dd>
-            </d1>
-            <!-- adding an external link-->
-            <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank" class="blue-link">get
-                the recepie</a>
-        </section>
+            <section>
+                <h3>Menu specials</h3>
+                <table border>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Items</th>
+                            <th rowspan="2">Price</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Calories</th>
+                        </tr>
 
-        <!--adding section for menu table-->
+                    </thead>
 
-        <section>
-            <h3>Menu specials</h3>
-            <table border>
-                <thead>
-                    <tr>
-                        <th colspan="2">Items</th>
-                        <th rowspan="2">Price</th>
-                    </tr>
-                    <tr>
-                        <th>Name</th>
-                        <th>Calories</th>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Banana bread</td>
+                            <td>250</td>
+                            <td> &dollar;6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Oatcake</td>
+                            <td>400</td>
+                            <td>&dollar;8.00</td>
+                        </tr>
 
-                </thead>
+                    </tbody>
+                </table>
 
-                <tbody>
-                    <tr>
-                        <td>Banana bread</td>
-                        <td>250</td>
-                        <td> &dollar;6.00</td>
-                    </tr>
-                    <tr>
-                        <td>Oatcake</td>
-                        <td>400</td>
-                        <td>&dollar;8.00</td>
-                    </tr>
+            </section>
 
-                </tbody>
-            </table>
-
-        </section>
-
-    </main>
-    <!-- Site footer-->
-    <footer class="site-footer">
-        Copyright &copy; Reggie's coffee shop, 2023
-    </footer>
+        </main>
+        <!-- Site footer-->
+        <footer class="site-footer">
+            Copyright &copy; Reggie's coffee shop, 2023
+        </footer>
+    </div>
 
 
 
