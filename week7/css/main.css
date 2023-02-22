@@ -83,14 +83,14 @@ nav ul a {
     /* viewport based unit */
     /* width: 100vw; */
     /* scroll wheel bc it has space coming from the parent, it goes out of the screen which is not ideal */
-    position: relative;
+    position:relative;
     
 }
 
 .blue-link.large-text{
     position: absolute;
     bottom: 0;
-    right: 0;
+    right:  0;
 
 }
 
@@ -103,6 +103,7 @@ nav ul a {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none; 
+    float:right;
 }
 
 .large-text {
