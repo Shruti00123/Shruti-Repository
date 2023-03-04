@@ -70,13 +70,18 @@ p{
     margin: 30px;
 }
 
-#fullname{
+#name{
     width: 1125px;
-    height: 20px;
+    height: 30px;
 }
-.email{
+#email{
     width: 1125px;
-    height: 20px;
+    height: 30px;
+}
+
+#message{
+    width: 1125px;
+    height: 50px;
 }
 
 
