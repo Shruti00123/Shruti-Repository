@@ -1,7 +1,7 @@
 /*Adding container with css properties*/
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #cff5f0;
 
 }
@@ -34,7 +34,6 @@ nav ul {
 nav ul li {
     display: inline-block;
     width: 25%;
-    padding: ;
 }
 
 
@@ -45,8 +44,9 @@ nav ul a {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
+    font-size: 12pt;
 }
 
 /*adding image with text wrapping around it*/
