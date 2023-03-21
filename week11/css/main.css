@@ -144,18 +144,18 @@ p{
     flex-flow: row wrap;
 
 }
-.actions-list li {
-    max-width: 50%;
-    padding:1em;
-    text-align: center;
-    font-size: 1.5em;
-}
 
 /*footer styles*/
 .site-footer{
     margin-top: 20px;
     padding: 20px 0;
     border-top: 2px solid #00add8;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding:1em;
+    font-size: 1.5em;
 }
 
 .copy{
@@ -223,7 +223,7 @@ p{
 
 /* Media Query 800px*/
 
-@media screen and ( min-width:800px){
+@media screen and( min-width:800px){
     .actions-list li{
         max-width: 20%;
     }
