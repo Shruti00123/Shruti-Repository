@@ -1,0 +1,32 @@
+/*font-family: 'Source Sans Pro', sans-serif*/
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* font icons*/
+h1 i::before{
+    font-size: 6rem;
+    color: rgb(77, 77, 147);
+}
+
+.fa-solid::before{
+    font-size: 3rem;
+    color: blue;
+
+}
+
+.map iframe{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
