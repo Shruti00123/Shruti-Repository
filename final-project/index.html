@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Final Project</title>
 </head>
-
+<!--
 <body>
     <!--Adding navigation-->
-
+<!---
     <div class="container">
-        <header>
+        
             <nav>
                 <div class="navbar">
                     <div class="nav-logo">
@@ -29,6 +30,7 @@
                     </ul>
                     <div class="search-container">
                         <!--adding form for search button-->
+<!---
                         <form>
                             <input type="text" placeholder="Search">
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -39,24 +41,25 @@
             </nav>
 
 
-
-            <div>
+        <header>
+            <div class="container">
                 <h1 class="highlight">Welcome to Three Star Media</h1>
-                <p>
+                
+                <p class="highlight_para">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
                     dignissimos, odit hic sequi, eligendi ducimus atque ipsam obcaecati
                     nihil harum minus labore asperiores. In atque illo repellendus eos,
                     recusandae facilis.
                 </p>
-                <!--Adding icon link-->
+                
                 <button class="btn">Connect With Us <i class="fa-solid fa-play"></i></button>
             </div>
 
         </header>
         <br>
-        <!--starting the main section-->
+        
         <main>
-            <!--adding section with id-->
+            
             <section id="aboutus">
                 <div class="about-parent">
                     <div class="about-us">
@@ -92,14 +95,14 @@
                             eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
                             nunc. Fusce sit amet urna eget mauris bibendum elementum.
                         </p>
-                        <!--Adding icon link with a button-->
+                        
                         <button>Digital Plans <i class="fa-solid fa-play"></i></button>
                     </div>
                 </div>
 
             </section>
 
-            <!--adding section for marketing-->
+            
             <section>
                 <div class="item-2">
                     <img src="images/marketing.jpg" alt="image description">
@@ -109,13 +112,13 @@
                         eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
                         nunc. Fusce sit amet urna eget mauris bibendum elementum.
                     </p>
-                    <!--adding icon link with a button-->
+                    
                     <button>Marketinig Plans <i class="fa-solid fa-play"></i></button>
 
                 </div>
             </section>
 
-            <!--adding section for video production-->
+            
 
             <section>
                 <div class="grid-container-2">
@@ -127,7 +130,7 @@
                             eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
                             nunc. Fusce sit amet urna eget mauris bibendum elementum.
                         </p>
-                        <!--adding icon link with a button-->
+                        
                         <button>Vedio Plans <i class="fa-solid fa-play"></i></button>
                     </div>
                 </div>
@@ -142,7 +145,7 @@
                         eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
                         nunc. Fusce sit amet urna eget mauris bibendum elementum.
                     </p>
-                    <!--adding icon link with button-->
+                
                     <button>Web Plans <i class="fa-solid fa-play"></i></button>
                 </div>
             </section>
@@ -161,7 +164,7 @@
             </section>
 
             <section>
-                <div class="our-vision">
+                <div class="our-mission">
                     <div>
                         <h3>Our Vision</h3>
                         <p>
@@ -196,13 +199,13 @@
             </section>
             <section>
                 <div class="team">
-                    <div class="team-2">
+                    <div class="team-2  bob-team">
                         <img src="images/bob.jpg" alt="description">
                     </div>
-                    <h2>Bob Rite</h2>
+                    <h2 class="bob-team">Bob Rite</h2>
                     <h3>CFO and CO-owner</h3>
                     <hr>
-                    <p>
+                    <p class="bob-team">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
                         iusto eaque cumque soluta sed, expedita pariatur incidunt sapiente
                         dolor perspiciatis sunt doloribus quaerat ad numquam error.
@@ -211,14 +214,14 @@
                 </div>
             </section>
 
-            <!--Adding section for contact form-->
+            
 
             <section id="contact">
 
-                <h2>Contact Us</h2>
+                <h2 class="headline">Contact Us</h2>
                 <h3>Send Us A Message</h3>
-                <!--adding a form-->
-                <form action="thanks.html" method="get" class="form">
+                
+                <form action="thanks.html" method="get" class="contact-form">
 
                     <div>
                         <label for="name">Name</label>
@@ -242,10 +245,8 @@
                 </form>
 
             </section>
-
-
-            <!--adding section for hours of operation with a table-->
-            <section>
+        
+             <section>
 
                 <div>
                     <h2 class="headline">Hours Of Operation</h2>
@@ -271,7 +272,196 @@
                 </div>
             </section>
 
-            <!--adding section for location with embedded map-->
+        -->
+
+<!--adding section for location with embedded map-->
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="image description">
+                </div>
+                <li><a class="active" href="#"> Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#ourservices"> Our Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="highlight">Welcome to Three Star Media</h1>
+            <p class="highlight_para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+                dignissimos, odit hic sequi, eligendi ducimus atque ipsam obcaecati
+                nihil harum minus labore asperiores. In atque illo repellendus eos,
+                recusandae facilis.
+            </p>
+            <button class="btn">Connect With Us <i class="fa-solid fa-play"></i></button>
+        </div>
+    </header>
+    <main>
+        <section id="aboutus">
+            <div id="about" class="about-parent">
+                <div class="about-us">
+                    <div class="about-1">
+                        <img src="images/about-us.jpg" alt="">
+                    </div>
+                    <div class="about-2">
+                        <h2>About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                            iusto eaque cumque soluta sed, expedita pariatur incidunt sapiente
+                            dolor perspiciatis sunt doloribus quaerat ad numquam error.
+                            Reprehenderit laborum alias ab.
+                        </p>
+                        <p>
+                            Exercitationem aspernatur alias fuga perferendis accusamus iure,
+                            sint consectetur laudantium neque distinctio voluptate autem ea aut
+                            veritatis temporibus voluptatibus ex aliquam possimus! Consequuntur
+                            accusantium iure, iusto aspernatur adipisci reiciendis numquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourservices">
+            <h2 class="headline">Our Services</h2>
+            <div class="grid-container">
+                <div class="item-1">
+                    <img src="images/digital.jpg" alt="">
+                    <h3>Digital Transformation</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+                        eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
+                        nunc. Fusce sit amet urna eget mauris bibendum elementum.
+                    </p>
+                    <button>Digital Plans <i class="fa-solid fa-play"></i></button>
+                    Digital Plan</i>
+                    </button>
+                </div>
+                <div class="item-2">
+                    <img src="images/marketing.jpg" alt="">
+                    <h2>Marketing</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+                        eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
+                        nunc. Fusce sit amet urna eget mauris bibendum elementum.
+                    </p>
+                    <button>Digital Plans <i class="fa-solid fa-play"></i></button>
+                </div>
+            </div>
+            <div class="grid-container-2">
+                <div class="item-1">
+                    <img src="images/video.jpg" alt="">
+                    <h2>Video production</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+                        eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
+                        nunc. Fusce sit amet urna eget mauris bibendum elementum.
+                    </p>
+                    <button>Digital Plans <i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="item-2">
+                    <img src="images/web.jpg" alt="">
+                    <h2>Web Development</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+                        eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
+                        nunc. Fusce sit amet urna eget mauris bibendum elementum.
+                    </p>
+                    <button>Digital Plans <i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="item-2">
+                    <img src="images/print.jpg" alt="">
+                    <h2>Print</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+                        eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
+                        nunc. Fusce sit amet urna eget mauris bibendum elementum.
+                    </p>
+                    <button>Digital Plans <i class="fa-solid fa-play"></i></button>
+                </div>
+            </div>
+        </section>
+        <div class="our-mission">
+            <div>
+                <h3>Our Vision</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+                    eleifend urna. Integer vitae justo vel nulla bibendum accumsan nec a
+                    nunc. Fusce sit amet urna eget mauris bibendum elementum.
+                </p>
+                <button class="triangle-button">Learn More</button>
+            </div>
+        </div>
+
+
+        <section id="team">
+            <h2 class="headline">Our Team</h2>
+            <div class="team">
+                <div class="team-1">
+                    <img src="images/john.jpg" alt="">
+                </div>
+                <div class="team-2">
+                    <h2>John Doe</h2>
+                    <span class="bottom-border">CEO and Co-Owner</span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                        iusto eaque cumque soluta sed, expedita pariatur incidunt sapiente
+                        dolor perspiciatis sunt doloribus quaerat ad numquam error.
+                        Reprehenderit laborum alias ab.
+                    </p>
+
+                </div>
+            </div>
+            <div class="team ">
+                <div class="team-2  bob-team">
+                    <h3 class="bob-team">BOB RIte </h3>
+                    <span class="bottom-border bob-team">CFO and Co-Owner</span>
+                    <p class="bob-team">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                        iusto eaque cumque soluta sed, expedita pariatur incidunt sapiente
+                        dolor perspiciatis sunt doloribus quaerat ad numquam error.
+                        Reprehenderit laborum alias ab.
+                    </p>
+
+                </div>
+                <div class="team-1">
+                    <img src="images/bob.jpg" alt="">
+                </div>
+            </div>
+            <h2 class="headline">Contact Us</h2>
+            <div id="contact" class="contact-us">
+                <form class="contact-form">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="firstname" />
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Submit" />
+                </form>
+
+                <section>
+
+
+
+                </section>
+            </div>
+            </div>
+
 
             <section>
                 <h2>Location</h2>
@@ -282,15 +472,34 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-        </main>
-        <br>
-        <!--adding section for footer-->
-        <footer>
-            <div class="footer">
-                Copyright &copy; Three Star Media,2020.
-                All images are taken from unsplash
-            </div>
-        </footer>
+
+        </section>
+        </div>
+        </div>
+        <h2 class="headline">Hours Of Operation</h2>
+        <table>
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>Monday- Friday</td>
+                <td>9AM - 6AM</td>
+            </tr>
+            <tr>
+                <td>Saturday-Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </main>
+    <br>
+    <!--adding section for footer-->
+    <footer>
+        <div class="footer">
+            Copyright &copy; Three Star Media,2020.
+            All images are taken from unsplash
+        </div>
+    </footer>
 
     </div>
 
