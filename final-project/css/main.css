@@ -327,6 +327,8 @@ p {
   width: 200px;
 }
 
+
+
 /*styling for form*/
 
 #name {
@@ -472,7 +474,10 @@ footer {
 .bottom-border {
   border-bottom: 2px solid orange;
   padding-left: 20px;
+  font-weight: bold;
+  
 }
+
 
 .message {
   font-size: 1.25em;
@@ -482,10 +487,6 @@ footer {
 .location {
   font-size: 1.25em;
   font-weight: bold;
-}
-
-.headline {
-  font-size: 1.25em;
 }
 
 
