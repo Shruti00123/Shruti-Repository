@@ -6,11 +6,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: large;
 }
-h2{
+
+h2 {
   font-size: 2em;
   font-weight: bold;
 }
-h3{
+
+h3 {
   font-size: 1em;
   font-weight: bold;
 }
@@ -345,6 +347,7 @@ p {
 
 }
 
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -401,7 +404,8 @@ input[type="submit"]:hover {
 
 /* Style the map container */
 .map-container {
-  width: 50%;
+  flex-basis: 50%;
+  width: 40%;
   height: 400px;
   margin-top: 20px;
   padding-bottom: 100px;
@@ -470,7 +474,22 @@ footer {
   padding-left: 20px;
 }
 
-/*adding style for max-width 760px and above*/
+.message {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 1.25em;
+}
+
+
+/*adding style for screen 760px */
 @media screen and (max-width: 760px) {
   .navbar {
     flex-direction: column;
@@ -574,23 +593,6 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  input[type="text"] {
-    flex: 0 0 100%;
-    margin-bottom: 10px;
-  }
-
-  button[type="submit"] {
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
 
 @media (max-width: 600px) {
   input[type="text"] {
@@ -608,4 +610,30 @@ footer {
     float: none;
     display: block;
   }
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+
+
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
