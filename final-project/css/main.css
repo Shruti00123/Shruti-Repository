@@ -1,83 +1,17 @@
-
-/*header {
-    background: url(../images/main-banner.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .container{
-    max-width: 100%;
-  }
-  
-   nav {
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    
-  }
-
-  
-  .navbar a:hover {
-    background-color: orange;
-  }
-  
-  .current {
-    background-color: rgb(160, 116, 35);
-  }
-  .search-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(14, 2, 2);
-    display: flex;
-    justify-content: space-around;
-    height: 15%;
-    align-items: center;
-  }
-
-  .navbar a:hover {
-    background-color: orange;
-  }
-  
-  .active {
-    background-color: orange;
-  }
-  .search-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-
-
-
-#name {
-    width: 100%;
-    height: 40px;
+/*adding font family of open sans in body*/
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-#email {
-    width: 100%;
-    height: 40px;
-}
+/*adding max-width of 1200px to the main container*/
+.main-container {
+  max-width: 1200px;
+  justify-content: center;
 
-#message {
-    width: 100%;
-    height: 40px;
 }
-*/
-
 
 /* Navbar styles */
 body {
@@ -95,7 +29,6 @@ nav {
   width: 80%;
   margin: 0 auto;
   background-color: black;
-  overflow: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -109,10 +42,12 @@ nav {
   text-decoration: none;
   font-size: 17px;
 }
-.nav-logo > img {
+
+.nav-logo>img {
   width: 60px;
   height: 100%;
 }
+
 .navbar a:hover {
   background-color: orange;
 }
@@ -120,6 +55,8 @@ nav {
 .active {
   background-color: orange;
 }
+
+/* search container styles*/
 .search-container {
   display: flex;
   justify-content: center;
@@ -130,12 +67,18 @@ form {
   flex-wrap: wrap;
   align-items: center;
 }
+
+.search_img {
+  width: 20px;
+  height: 20px;
+}
+
 input[type="text"] {
   flex: 1;
   padding: 10px;
   border: none;
 }
- 
+
 button[type="submit"] {
   padding: 12px 15px;
   border: 1px solid orange;
@@ -145,24 +88,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-
-@media (max-width: 600px) {
-  input[type="text"] {
-    flex: 0 0 100%;
-    margin-bottom: 10px;
-  }
-
-  button[type="submit"] {
-    flex: 0 0 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
-
+/* adding styles to header*/
 header {
   background-image: url(../images/main-banner.jpg);
   background-position: center;
@@ -176,6 +102,7 @@ header {
   flex-direction: column;
   position: relative;
 }
+
 .container {
   display: flex;
   gap: 10px;
@@ -185,6 +112,10 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 46px;
   height: 80%;
+}
+
+.main {
+  width: 1400px;
 }
 
 .highlight {
@@ -207,9 +138,9 @@ header {
   cursor: pointer;
   position: relative;
   width: 300px;
-
   padding: 10px 30px;
 }
+
 
 
 .btn:hover {
@@ -220,26 +151,34 @@ p {
   color: #fff;
   font-size: 1.2rem;
 }
+
 .about-parent {
   width: 100vw;
-  background: #ebcb87;
+  background: #ffe6ac;
 }
 
+/*adding styles to about*/
 .about-us,
 .team {
-  background: #ebcb87;
+  background: #ffe6ac;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   margin: 20px;
   width: 80%;
   margin: 20px auto;
 }
 
+.vision {
+  color: #fff;
+
+}
+
 .team {
   margin: auto;
 }
+
 .team-1,
 .about-1 {
   flex: 1;
@@ -260,9 +199,11 @@ p {
   flex-direction: column;
   gap: 27px;
 }
+
 .team-2 {
   margin: 0;
 }
+
 .team-2 h3,
 .about-2 h3 {
   font-size: 24px;
@@ -274,10 +215,11 @@ p {
 .team-2 p,
 .about-2 p {
   padding-left: 20px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 1.5;
 }
+
 .grid-container-2,
 .grid-container {
   display: grid;
@@ -287,12 +229,14 @@ p {
   align-items: center;
   gap: 20px;
 }
+
 .grid-container-2 {
   grid-template-columns: repeat(3, 27%);
 }
+
 .item-1,
 .item-2 {
-  background: #ebcb87;
+  background: #ffe6ac;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,8 +253,8 @@ p {
   height: auto;
 }
 
-.item-1 > h3,
-.item-2 > h3 {
+.item-1>h3,
+.item-2>h3 {
   font-size: 24px;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -318,8 +262,8 @@ p {
   margin: auto;
 }
 
-.item-1 > p,
-.item-2 > p {
+.item-1>p,
+.item-2>p {
   color: black;
   font-size: 16px;
   text-align: start;
@@ -327,12 +271,14 @@ p {
   margin: auto;
   margin-bottom: 20px;
 }
-.our-mission > div > h3 {
+
+.our-vision>div>h3 {
   color: white;
 }
+
 .item-1 button,
 .item-2 button,
-.our-mission > div > button {
+.our-vision>div>button {
   padding: 10px 30px;
   background-color: black;
   color: #fff;
@@ -343,12 +289,13 @@ p {
   font-size: 16px;
   cursor: pointer;
 }
-.our-mission > div > button {
+
+.our-vision>div>button {
   width: 0%;
   margin: 0;
 }
 
-.our-mission {
+.our-vision {
   background-image: url(../images/vision.jpg);
   background-position: center;
   background-size: cover;
@@ -356,15 +303,43 @@ p {
   height: 270px;
   width: 100vw;
 }
-.our-mission > div {
+
+.our-vision>div {
   display: flex;
   padding: 34px 129px;
   gap: 15px;
   justify-content: center;
   flex-direction: column;
 }
-.our-mission > div > button {
+
+.our-vision>div>button {
   width: 200px;
+}
+
+/*styling for form*/
+
+#name {
+  width: 500px;
+}
+
+#email {
+  width: 500px;
+}
+
+#message {
+  width: 500px;
+}
+
+.map-container {
+  flex-basis: 50%;
+
+
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .headline {
@@ -381,13 +356,15 @@ p {
   width: 80%;
   margin: 0 auto;
 }
+
 .contact-form {
-  display: flex;
+  flex-basis: 50%;
   flex-direction: column;
   width: 45%;
   gap: 12px;
   align-items: start;
 }
+
 /* Style the form inputs */
 input[type="text"],
 textarea {
@@ -418,12 +395,10 @@ input[type="submit"]:hover {
   width: 50%;
   height: 400px;
   margin-top: 20px;
+  padding-bottom: 100px;
 }
 
-/* Style the map */
-#map {
-  height: 100%;
-}
+
 table {
   border-collapse: collapse;
   width: 80%;
@@ -434,7 +409,7 @@ table {
 th {
   text-align: left;
   padding: 8px;
-  background: #ebcb87;
+  background: #ffe6ac;
   border: 1px solid #ddd;
 }
 
@@ -444,6 +419,7 @@ td {
   padding: 8px;
   border: 1px solid #ddd;
 }
+
 footer {
   background-color: #333;
   height: 50px;
@@ -470,7 +446,6 @@ footer {
 }
 
 .triangle-button::before {
-  content: "";
   position: absolute;
   top: 50%;
   right: 1px;
@@ -478,71 +453,82 @@ footer {
   border-bottom: 10px solid transparent;
   border-right: 10px solid white;
   padding: 0 5px;
-  transform: rotate(180deg) translateY(50%);
 }
 
 .bottom-border {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid orange;
   padding-left: 20px;
 }
 
-@media screen and (max-width: 786px) {
+/*adding style for max-width 760px and above*/
+@media screen and (max-width: 760px) {
   .navbar {
     flex-direction: column;
     height: auto;
     padding-bottom: 10px;
   }
+
   .nav-logo {
     background-color: orange;
     width: 100%;
   }
+
   .navbar a {
     width: 100%;
     text-align: center;
   }
+
   .search-container {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     height: 40px;
   }
-  form {
-    width: 100%;
-  }
-  header {
-    height: auto;
-  }
+
   .container {
     padding: 20px;
     height: 99%;
   }
+
   .highlight {
     font-size: 20px;
   }
+
   .highlight_para {
     font-size: 10px;
   }
+
   .btn {
     padding: 10px 30px;
     font-size: 10px;
     cursor: pointer;
     width: 100px;
   }
-  .about-parent > .about-us,
+
+  .main {
+    width: 100%;
+  }
+
+  .about-parent>.about-us,
   .team {
     flex-direction: column;
   }
+
   .team {
     padding: 5px;
   }
+
   .bob-team:nth-child(1) {
     order: 1;
   }
+
   .bob-team:nth-child(3) {
     order: 2;
   }
+
   .bob-team:nth-child(2) {
     order: 2;
   }
+
   .about-1,
   .about-2 {
     width: 100%;
@@ -550,49 +536,66 @@ footer {
     text-align: left;
     margin: 0;
   }
+
   .grid-container-2,
   .grid-container {
     grid-template-columns: repeat(1, 100%);
     width: 80%;
     margin: auto;
   }
+
   .item-1,
   .item-2 {
     align-items: self-start;
     padding: 5px 10px;
   }
-  .item-1 > p,
-  .item-2 > p {
+
+  .item-1>p,
+  .item-2>p {
     text-align: left;
   }
-  .our-mission {
+
+  .our-vision {
     height: 270px;
   }
-  .our-mission > div {
+
+  .our-vision>div {
     padding: 10px 10px;
-  }
-  .contact-us {
-    flex-direction: column;
-  }
-  .contact-form {
-    width: 100%;
-  }
-  .map-container {
-    width: 100%;
-    margin-bottom: 50px;
-    
   }
 }
 
+@media (max-width: 600px) {
+  input[type="text"] {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
 
+  button[type="submit"] {
+    flex: 0 0 100%;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
 
+@media (max-width: 600px) {
+  input[type="text"] {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
 
+  button[type="submit"] {
+    flex: 0 0 100%;
+  }
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
